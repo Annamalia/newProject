@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Futura Book';
+  src: url("..ontsuturauturaBookC.woff") format("woff"), url("..ontsuturauturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("..ontsuturauturaDemiC.woff") format("woff"), url("..ontsuturauturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,5 +355,5 @@ header {
   margin-right: 45px; }
 
 body {
-  font-family: sans-serif;
-  font-size: 14px; }
+  font-family: 'Futura Book', sans-serif;
+  fint-size: 14px; }
