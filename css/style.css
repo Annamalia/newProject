@@ -528,6 +528,9 @@ header {
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
 
+.design__section-title {
+  margin-bottom: 2rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 10px; } }
@@ -549,7 +552,9 @@ header {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .design__card {
+    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__button {
