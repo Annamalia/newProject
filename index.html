@@ -151,14 +151,14 @@
          прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на 
          трансляцию.
       </p>
-      <form action="" class="form control__form">
+      <form action="#" class="form control__form">
         <div class="control__input-group">
           <label for="user-name" class="label form__label control__label">Имя</label>
-          <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+          <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
         </div>
         <div class="control__input-group">
           <label for="user-phone" class="label form__label control__label">Телефон</label>
-          <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+          <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
         </div>
         <button class="button button--primary control__button">Отправить</button>
         <div class="policy control__policy">
@@ -314,18 +314,123 @@
       <!-- /.container -->
     </section>
     <!-- /.section design -->
+    <section class="section team">
+      <div class="container">
+        <div class="section-title team__section-title">
+          <h2 class="section-title__heading">Наша команда</h2>
+          <!-- /.section-title__heading -->
+          <div class="section-title__image">
+            <img src="img/team.svg" alt="team">
+          </div>
+          <!-- /.section-title__image -->
+          <p class="section-title__paragraph">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+        </div>
+        <!-- /.section-title -->
+        <div class="row">
+          <div class="col-30">
+            <div class="team">
+              <div class="team__label team__label--first "></div>
+              <img src="img/team/boy-1.jpg" alt="менеджер" class="team__image">
+              <div class="team__text">
+                <h3 class="team__title">Алексей Колмаков</h3>
+                <p class="team__list">Проектный менеджер</p>
+                <strong class="team__experience">Опыт работы 8 лет</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-30">
+            <div class="team">
+              <div class="team__label team__label--second"></div>
+              <img src="img/team/girl.jpg" alt="Дизайнер" class="team__image">
+              <div class="team__text">
+                <h3 class="team__title">Алиса Сухорукова</h3>
+                <p class="team__list">Дизайнер</p>
+                <strong class="team__experience">Опыт работы 6 лет</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-30">
+            <div class="team">
+              <div class="team__label team__label--third"></div>
+              <img src="img/team/boy-2.jpg" alt="Бригадир" class="team__image">
+              <div class="team__text">
+                <h3 class="team__title">Давид Волынев</h3>
+                <p class="team__list">Бригадир</p>
+                <strong class="team__experience">Опыт работы 7 лет</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="team__description">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, 
+          каждый сотрудник выполняет работу, соответствующую его специальности.</p>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section team -->
   </main>
+  <footer class="footer section--dark">
+    <div class="container">
+      <div class="footer__wrap">
+        <h3 class="footer__title">Остались вопросы?</h3>
+        <form action="#" class="form footer__form">
+          <div class="input-group footer__input-group">
+            <label for="user-name" class="label form__label label--light">Имя</label>
+            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">
+          </div>
+          <div class="input-group footer__input-group">
+            <label for="user-phone" class="label form__label label--light">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+          </div>
+          <div class="input-group footer__input-group footer__input-group--full-width">
+            <label for="user-question" class="label form__label label--light">Вопрос</label>
+            <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question" placeholder="Я хочу спросить">
+          </div>
+          <div class="policy footer__policy">
+            <input type="checkbox" class="policy__checkbox" name="policy-checkbox" id="policy-checkbox" checked>
+            <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+          </div>
+          <button class="button button--primary footer__button">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <!-- /.container -->
+    <div class="footer__menu">
+      <div class="container">
+        <div class="menu">
+          <div class="logo menu__logo">Repair Design Project</div>
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__item wow fadeIn" data-wow-delay="0.2s">Главная</a>
+            <a href="#" class="nav__item wow fadeIn" data-wow-delay="0.4s">Проекты</a>
+            <a href="#" class="nav__item wow fadeIn" data-wow-delay="0.6s">Замер</a>
+            <a href="#" class="nav__item wow fadeIn" data-wow-delay="0.8s">Команда</a>
+            <a href="#" class="nav__item wow fadeIn" data-wow-delay="1s">Отзывы</a>
+            <a href="#" class="nav__item wow fadeIn" data-wow-delay="1.2s">Контакты</a>
+          </nav>
+          <div class="contacts menu__contacts">
+            <a href="tel:+79997683299" class="contacts contacts__phone">+7 (999) 768-32-99</a>
+            <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <div class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
-      <form action="" class="form modal__form">
-        <label for="user-name" class="label form__label label--light">Имя</label>
-        <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
-        <label for="user-phone" class="label form__label label--light">Телефон</label>
-        <input type="tel" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
-        <label for="user-email" class="label form__label label--light">Email</label>
-        <input type="email" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш Email:">
+      <form action="#" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <label for="user-name" class="label form__label label--light">Имя</label>
+          <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="user-email" class="label form__label label--light">Email</label>
+          <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш Email:">
+        </div>
         <div class="policy modal__policy">
           <input type="checkbox" class="policy__checkbox" name="policy-checkbox" id="policy-checkbox" checked>
           <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
@@ -339,6 +444,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -47,4 +47,81 @@ $(document).ready(function() {
   bullets.css('left', prev.width() + 10)
 
   new WOW().init();
+
+  //Валидация формы
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },  
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    errorElement: "div",
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
+      },  
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Введите корректный email",
+        email: "Введите в формате name@domain.com"
+      }
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },  
+      userPhone: "required",
+    },
+    errorElement: "div",
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
+      },  
+      userPhone: "Заполните поле"
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },  
+      userPhone: "required",
+      userQuestion: "required"
+    },
+    errorElement: "div",
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
+      },  
+      userPhone: "Заполните поле",
+      userQuestion: "Заполните поле"
+    }
+  });
+  
+  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: '+7(___) __-__-___'});
+
 }); 
