@@ -472,7 +472,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 8;
   width: 100%;
   background-color: #131313;
   padding: 24px 0; }
@@ -904,6 +904,35 @@ header {
   .footer__menu {
     background: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    background: #131313;
+    margin-bottom: 5rem;
+    min-height: 465px; }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 42.07rem;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px; }
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 26px; }
+    .footer__social-mail {
+      background: #E3B873 url("../img/mail-me.svg") no-repeat center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      margin-right: 23px; }
+    .footer__social-inst {
+      background: #E3B873 url("../img/inst.svg") no-repeat center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%; }
 
 @media screen and (max-width: 1200px) {
   html {
