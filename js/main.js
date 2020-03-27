@@ -75,6 +75,18 @@ $(document).ready(function() {
         required: "Введите корректный email",
         email: "Введите в формате name@domain.com"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена. Мы свяжемся с вами в течение 15 минут.');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
     }
   });
 
@@ -96,6 +108,17 @@ $(document).ready(function() {
         maxlength: "Имя не длиннее 15 букв"
       },  
       userPhone: "Заполните поле"
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена. Мы свяжемся с вами в течение 15 минут.');
+          $(form)[0].reset();
+        }
+      });
     }
   });
 
@@ -119,6 +142,17 @@ $(document).ready(function() {
       },  
       userPhone: "Заполните поле",
       userQuestion: "Заполните поле"
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert ('Форма отправлена. Мы свяжемся с вами в течение 15 минут.');
+          $(form)[0].reset();
+        }
+      });
     }
   });
   
@@ -155,8 +189,7 @@ $(document).ready(function() {
         });
 
         myMap.geoObjects
-          .add(myPlacemark);
-        
+          .add(myPlacemark);    
   });
-
+   
 }); 
